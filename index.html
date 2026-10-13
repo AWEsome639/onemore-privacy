@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>「一局」隐私政策</title>
+<style>
+:root{--ink:#1c1c1e;--soft:#555;--line:#e5e5ea;--accent:#5B5BD6}
+*{box-sizing:border-box}
+body{margin:0;padding:28px 20px 80px;font:16px/1.75 -apple-system,"PingFang SC","Noto Sans CJK SC",sans-serif;
+     color:var(--ink);background:#fff;max-width:760px;margin-inline:auto}
+h1{font-size:26px;margin:8px 0 18px;line-height:1.35}
+h2{font-size:19px;margin:34px 0 10px;padding-top:16px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:22px 0 8px}
+p{margin:10px 0}
+hr{border:0;border-top:1px solid var(--line);margin:26px 0}
+code{background:#f4f4f7;padding:1px 6px;border-radius:5px;font-size:14px}
+strong{font-weight:600}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:#fafafc;font-weight:600}
+li{margin:5px 0 5px 4px}
+a{color:var(--accent)}
+@media(prefers-color-scheme:dark){
+ body{background:#111;color:#eee}th{background:#1c1c1e}
+ code{background:#222}--line:#333
+ h2{border-color:#333}th,td{border-color:#333}}
+</style>
+</head>
+<body>
+<h1>「一局」隐私政策</h1>
+
+<p><strong>生效日期</strong>：2026 年 10 月 13 日</p>
+<p><strong>最后更新</strong>：2026 年 10 月 13 日</p>
+<p><strong>适用应用</strong>：「一局」（包名 <code>com.andrewoscar.onemore</code>）</p>
+<p><strong>开发者</strong>：Andrew Oscar</p>
+<p><strong>联系方式</strong>：andrew680701@outlook.com</p>
+
+<hr>
+
+<h2>一句话说明</h2>
+
+<p><strong>「一局」不收集你的任何个人信息。</strong> 你在应用里的所有记录（玩的局数、分数、收藏、等级、成就）</p>
+<p><strong>只存在你自己的手机里</strong>，不会上传到任何服务器 —— 因为<strong>这个应用根本没有服务器</strong>。</p>
+
+<hr>
+
+<h2>一、我们收集哪些信息</h2>
+
+<h3>1.1 我们不收集的信息</h3>
+
+<p>「一局」<strong>不收集、不读取、不上传</strong>下列任何信息：</p>
+
+<li>❌ 姓名、手机号、邮箱、身份证号等**个人身份信息**</li>
+<li>❌ 通讯录、短信、通话记录</li>
+<li>❌ 相册、照片、视频、麦克风、摄像头</li>
+<li>❌ 位置信息（GPS 或网络定位）</li>
+<li>❌ 设备识别码（IMEI、OAID、Android ID 等）</li>
+<li>❌ 应用列表、剪贴板内容</li>
+<li>❌ 任何形式的使用行为统计或崩溃上报</li>
+
+<h3>1.2 你的游戏记录存在哪里</h3>
+
+<p>你的等级、经验、通关记录、收藏、成就、设置（语言 / 主题色 / 界面模式）——</p>
+<p><strong>全部保存在你手机本地的应用私有目录中</strong>（HarmonyOS 的 <code>preferences</code> 存储）。</p>
+
+<li>这些数据**不会离开你的手机**</li>
+<li>**卸载应用即彻底删除**，我们无法恢复，也不会保留副本</li>
+<li>我们**没有能力**读取它们（没有服务器、没有账号系统、没有云端同步）</li>
+
+<hr>
+
+<h2>二、我们申请了哪些权限，为什么</h2>
+
+<p>本应用在 <code>module.json5</code> 中声明 <strong>3 个权限</strong>，全部有明确用途，<strong>没有一个用于收集信息</strong>：</p>
+
+<table><tr><th>权限</th><th>用途</th><th>什么时候用</th></tr></table><p>|---|---|---|</p>
+<table><tr><th>`ohos.permission.INTERNET`</th><th>**仅用于「局域网对战」** —— 和同一 Wi-Fi 下的另一台设备直接通信（UDP 广播）</th><th>**只在你主动开房间或加入房间时**</th></tr><tr><th>`ohos.permission.GET_WIFI_INFO`</th><th>读取当前 Wi-Fi 名称，用于**判断两台设备是否在同一网络**，好让局域网对战能连上</th><th>同上</th></tr><tr><th>`ohos.permission.VIBRATE`</th><th>答题正确 / 游戏结束时**轻轻震一下**（可在设置里关闭）</th><th>游戏过程中</th></tr></table>
+<h3>⚠️ 特别说明：关于「联网」</h3>
+
+<li>**本应用不连接任何互联网服务器**，没有后端、没有 API、没有云服务</li>
+<li>那个 `INTERNET` 权限**只被用于局域网内的设备间通信**（同一个 Wi-Fi 内）</li>
+<li>**你不开局域网对战 ⇒ 应用的任何功能都不会用到网络**</li>
+<li>**飞行模式下，355 款游戏全部可以正常玩**</li>
+
+<hr>
+
+<h2>三、第三方 SDK</h2>
+
+<p><strong>本应用不集成任何第三方 SDK。</strong></p>
+
+<li>❌ 无广告 SDK（应用内**没有广告**）</li>
+<li>❌ 无统计分析 SDK（如友盟、神策、Google Analytics）</li>
+<li>❌ 无崩溃上报 SDK（如 Bugly、Firebase Crashlytics）</li>
+<li>❌ 无推送 SDK</li>
+<li>❌ 无社交分享 SDK</li>
+
+<hr>
+
+<h2>四、儿童隐私</h2>
+
+<p>本应用<strong>不收集任何人的信息</strong>，包括儿童。</p>
+<p>游戏内容为益智类（数字、逻辑、文字、记忆、反应），<strong>无暴力、无恐怖、无社交、无内购</strong>，适合全年龄段。</p>
+
+<p>若家长对孩子的使用有疑问，欢迎通过下方邮箱联系我们。</p>
+
+<hr>
+
+<h2>五、数据安全</h2>
+
+<li>你的数据**只在你自己的设备上** ⇒ **不存在&quot;传输中被截获&quot;或&quot;服务器被攻破&quot;的风险**</li>
+<li>局域网对战传输的**只有当前这一局的游戏状态**（如棋子的落点、竞速的用时）：</li>
+<p>  - 通过 <strong>UDP 广播</strong>在<strong>同一局域网内</strong>直接发送给对局设备</p>
+<p>  - <strong>不经过任何中转服务器</strong></p>
+<p>  - <strong>对局结束即丢弃，不落盘、不上传</strong></p>
+<li>应用**不申请存储权限**，无法读取你手机上的任何文件</li>
+
+<hr>
+
+<h2>六、你的权利</h2>
+
+<p>由于<strong>我们不收集你的任何信息</strong>，以下权利天然成立：</p>
+
+<table><tr><th>权利</th><th>怎么实现</th></tr></table><p>|---|---|</p>
+<table><tr><th>**知情权**</th><th>本政策已完整说明</th></tr><tr><th>**删除权**</th><th>**卸载应用**即可彻底删除全部本地记录</th></tr><tr><th>**拒绝权**</th><th>不使用局域网对战功能 ⇒ 不需要任何网络权限</th></tr><tr><th>**更正权**</th><th>设置页可随时修改 / 用「重置进度」清空全部记录</th></tr></table>
+<hr>
+
+<h2>七、本政策的变更</h2>
+
+<p>若本政策有更新，我们会：</p>
+
+<p>1. 修改本页顶部的「最后更新」日期</p>
+<p>2. 在应用内以显著方式提示</p>
+
+<p><strong>我们的承诺</strong>：只要应用仍然不收集信息，本政策的核心条款（第一节）就不会改变。</p>
+
+<hr>
+
+<h2>八、联系我们</h2>
+
+<p>对隐私有任何疑问、建议或投诉，请联系：</p>
+
+<p><strong>邮箱</strong>：andrew680701@outlook.com</p>
+
+<p>我们会在 <strong>7 个工作日内</strong>回复。</p>
+
+<hr>
+
+<p>*本政策适用于 HarmonyOS 版「一局」。*</p>
+
+</body>
+</html>
